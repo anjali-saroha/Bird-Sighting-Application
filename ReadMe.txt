@@ -18,6 +18,3 @@ User can add a new bird, update a bird and delete a bird and also add various da
 * Redux  
 * Bootstrap 4
 * React Modal for modal
-* Babel core 7
-* Babel loader 8
-* Webpack 4

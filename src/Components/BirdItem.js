@@ -29,8 +29,10 @@ export default class BirdItem extends Component {
         this.setState((prevState, props) => ({
             isEdit: !prevState.isEdit
         }));
-
         if (name === updatedName && description === updatesDescription && type === updatedType) {
+            if(updatedDate === ""){
+                 return ;
+            }
             this.props.addDate(id, updatedDate)
         } else {
             this.props.editBirdSubmit(
@@ -62,10 +64,10 @@ export default class BirdItem extends Component {
                     <td>
                         <input type="datetime-local"
                                ref= {dateInput => this.dateInput = dateInput}
-                               defaultValue={date}/>
+                               defaultValue={""}/>
                     </td>
                     <td>
-                        <i  className="fa fa-pencil" aria-hidden="true" onClick={this.editBirdSubmit}/>
+                        <i  className="fa fa-save" aria-hidden="true" onClick={this.editBirdSubmit}/>
                     </td>
                     <td>
                         <i className="fa fa-trash-o" aria-hidden="true"/>

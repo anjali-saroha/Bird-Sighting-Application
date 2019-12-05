@@ -11,6 +11,8 @@ const customStyles = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
+        position: 'relative',
+        maxWidth: '50%'
     }
 };
 
@@ -42,7 +44,7 @@ class SimpleModal extends React.Component {
     render() {
         return (
             <div>
-                <button className="btn btn-dark pull-left" onClick={this.openModal}>Add New</button>
+                <button className="btn btn-dark pull-left" onClick={this.openModal}>Add Bird</button>
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}

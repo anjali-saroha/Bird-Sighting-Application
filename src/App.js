@@ -51,7 +51,7 @@ class App extends Component {
                     <div className="col-lg-12">
                         <div className="card">
                             <div className="card-header">
-                                Bird Lists
+                                Birds Lists
                             </div>
                             <div className="card-body">
                                 <table className="table table-hover">
@@ -61,7 +61,7 @@ class App extends Component {
                                         <th>Description</th>
                                         <th>Type</th>
                                         <th>Date/Time</th>
-                                        <th>Update</th>
+                                        <th>Edit/Save</th>
                                         <th>Delete</th>
                                     </tr>
                                     </thead>
